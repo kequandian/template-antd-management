@@ -5,10 +5,11 @@ import router from '@/config/router.config';
 
 const { SubMenu } = Menu;
 
-export default function LeftNav(props) {
+export default function LeftNav({ path }) {
   return <Menu
     mode="inline"
     style={{ height: '100%', borderRight: 0 }}
+    selectedKeys={[path]}
   >
     {router.map((route, i) => {
       const { name, path, icon, items } = route;

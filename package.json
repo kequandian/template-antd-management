@@ -9,14 +9,16 @@
   },
   "dependencies": {
     "@babel/core": "^7.4.5",
+    "@zeit/next-css": "^1.0.1",
     "antd": "^3.19.3",
     "babel-plugin-import": "^1.12.0",
     "babel-plugin-module-resolver": "^3.2.0",
     "next": "^8.1.0",
     "next-antd-aza-less": "^1.0.2",
-    "null-loader": "3.0.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "zero-element": "^1.0.0-beta.10",
+    "zero-element-antd": "github:kequandian/zero-element-antd"
   },
   "devDependencies": {}
 }

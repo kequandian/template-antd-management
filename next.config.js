@@ -1,18 +1,21 @@
 /* eslint-disable */
+const WithCSS = require('@zeit/next-css');
 const antdLessLoader = require("next-antd-aza-less")
 
-if (typeof require !== 'undefined') {
-  require.extensions['.less'] = (file) => {}
+if (typeof require !== "undefined") {
+  require.extensions[".less"] = () => { };
+  require.extensions[".css"] = file => { };
 }
 
 /* Without CSS Modules, with PostCSS */
-module.exports = antdLessLoader({
-    cssModules: true,
-    cssLoaderOptions: {
-      importLoaders: 1,
-      localIdentName: "[local]___[hash:base64:5]",
-    },
-    lessLoaderOptions: {
-      javascriptEnabled: true,
-    }
-});
+module.exports = WithCSS(antdLessLoader({
+  cssModules: true,
+  cssLoaderOptions: {
+    importLoaders: 1,
+    localIdentName: "[local]___[hash:base64:5]",
+  },
+  lessLoaderOptions: {
+    javascriptEnabled: true,
+  }
+})
+)

@@ -22,7 +22,7 @@ export default function PrimaryLayout({ router, children }) {
     </Header>
     <Layout className="ant-layout-has-sider">
       <Sider width={200} style={{ background: '#fff' }}>
-        <LeftNav />
+        <LeftNav path={router.asPath} />
       </Sider>
       <Layout style={{ padding: '0 24px 24px' }}>
         <Breadcrumb path={router.asPath} />

@@ -7,6 +7,8 @@ import Progress from '@/src/framework/Progress';
 import PrimaryLayout from '@/src/framework/PrimaryLayout';
 import '@/src/global.less';
 
+import ZEle_antd from 'zero-element-antd';
+
 class AdminApp extends App {
   componentDidMount() {
     Router.events.on('routeChangeStart', (url) => {
