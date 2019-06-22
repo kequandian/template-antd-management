@@ -5,9 +5,9 @@ import Head from 'next/head';
 import Progress from '@/src/framework/Progress';
 
 import PrimaryLayout from '@/src/framework/PrimaryLayout';
-import '@/src/global.less';
 
-import ZEle_antd from 'zero-element-antd';
+import '@/src/global';
+import '@/src/global.less';
 
 class AdminApp extends App {
   componentDidMount() {

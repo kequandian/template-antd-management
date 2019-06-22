@@ -9,7 +9,8 @@ if (typeof require !== "undefined") {
 
 /* Without CSS Modules, with PostCSS */
 module.exports = WithCSS(antdLessLoader({
-  cssModules: true,
+  // cssModules: true,
+  cssModules: false,
   cssLoaderOptions: {
     importLoaders: 1,
     localIdentName: "[local]___[hash:base64:5]",
