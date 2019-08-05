@@ -21,7 +21,7 @@ export default ({ path }) => {
   return <Breadcrumb className="ZEleA-Breadcrumb-margin">
     {pathAry.map((item, i) => {
       if (item === '/') {
-        return <Breadcrumb.Item key={item}>主页</Breadcrumb.Item>;
+        return <Breadcrumb.Item key={item}>首页</Breadcrumb.Item>;
       }
       return <Breadcrumb.Item key={item}>
         {findPath(item, router).name}
