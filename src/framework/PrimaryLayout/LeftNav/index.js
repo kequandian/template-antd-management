@@ -13,7 +13,7 @@ export default function LeftNav({ path }) {
   >
     {router.map((route, i) => {
       const { name, path, icon, items } = route;
-      if (items) {
+      if (Array.isArray(items) && items.length) {
         return <SubMenu
           key={path || i}
           title={
