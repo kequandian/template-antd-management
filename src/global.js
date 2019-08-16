@@ -1,10 +1,21 @@
 import ZEle_antd from 'zero-element-antd';
 
-import { set as setEndpoint } from 'zero-element/lib/utils/request/endpoint';
 // import { saveToken } from 'zero-element/lib/utils/request/token';
 
-// setEndpoint('http://192.168.1.1:8000');
+import { set as AITSet } from 'zero-element-global/lib/actionItemType';
+import { set as setEndpoint } from 'zero-element/lib/utils/request/endpoint';
 
-// saveToken({
-//   token: 'token value',
-// });
+import path from './actionItemType/path';
+
+
+// if (process.env.NODE_ENV === 'development') {
+//   setEndpoint('http://127.0.0.1:8080');
+
+//   saveToken({
+//     token: '',
+//   });
+// }
+
+AITSet({
+  path,
+});
