@@ -10,7 +10,7 @@
   "dependencies": {
     "@babel/core": "^7.4.5",
     "@zeit/next-css": "^1.0.1",
-    "antd": "^3.19.3",
+    "antd": "^3.22.1",
     "babel-plugin-import": "^1.12.0",
     "babel-plugin-module-resolver": "^3.2.0",
     "next": "8.0.4",
