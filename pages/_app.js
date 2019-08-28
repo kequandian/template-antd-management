@@ -28,7 +28,7 @@ class AdminApp extends App {
         <Head>
           <title>后台应用</title>
           {process.env.NODE_ENV === 'production' ? (
-            <script src="static/config.js"></script>
+            <script src="/static/config.js"></script>
           ) : null}
         </Head>
         <Progress ref={r => this.progress = r} />
