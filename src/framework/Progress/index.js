@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import style from './index.less'
+import './index.less';
 
 class Progress extends Component {
   state = {
@@ -19,12 +19,12 @@ class Progress extends Component {
 
   render() {
     return (
-      <div className={style.progress} style={this.state.show ? { display: 'block' } : { display: 'none' }}>
-        <div className={style.bar}>
-          <div className={style.peg}></div>
+      <div className="progress" style={this.state.show ? { display: 'block' } : { display: 'none' }}>
+        <div className="bar">
+          <div className="peg"></div>
         </div>
-        <div className={style.spinner}>
-          <div className={style['spinner-icon']}></div>
+        <div className="spinner">
+          <div className="spinner-icon"></div>
         </div>
       </div>
     )
